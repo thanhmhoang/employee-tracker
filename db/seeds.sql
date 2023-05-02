@@ -16,8 +16,8 @@ VALUES ("Account Executive", 130000, 1),
        ("Lawyer", 100000, 4),
        ("Legal Team Lead", 130000, 4);
        
-INSERT INTO employees(first_name, last_name, role_id, manager_id)
-    VALUES  ("James", "White", 1, 3),
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+    VALUES  ("James", "White", 1, NULL),
             ("Steven", "Tran", 6, 1),
             ("Sarah", "Franklin", 2, NULL),
             ("Michael", "Jones", 3, NULL),
