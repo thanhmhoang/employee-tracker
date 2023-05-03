@@ -43,7 +43,7 @@ function menuPrompt() {
         if (res.menu === 'Add A Role'){
         addRole()    
         }
-        if (res.menu === 'Add A Employee'){
+        if (res.menu === 'Add An Employee'){
         addEmployee()    
         }
         if (res.menu === 'Update An Employee Role'){
@@ -121,7 +121,7 @@ function addEmployee() {
         type: 'input',
         name: 'manager_id',
         message: 'What is their manager ID?',
-    }
+    },
 ]) .then (function(res){
         db.query('INSERT INTO employee (first_name, last_name, role_id, manager_id)values(?,?,?,?)', [res.first_name, res.last_name, res.role_id, res.manager_id], function(err, data){
             console.table(data)
@@ -140,7 +140,7 @@ function updateRole() {
         type: 'input',
         name: 'role',
         message: 'What role ID you would like to update?',
-    }
+    },
 ]) .then (function(res){
         db.query('UPDATE employee SET role_id=? WHERE id=?', [res.role, res.employee], function(err, data){
             console.table(data)

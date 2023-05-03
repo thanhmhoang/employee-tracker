@@ -68,7 +68,7 @@ node server.js
 ```
 Users will be prompted a series of questions and options. Users will be able to navigate up and down the options in the terminal to decide their course of action. Users will be able to view the departments, roles, and employees in their database. Along with adding departments, roles, employees and/or updating an employee role. Once they are done, they can click "Exit" to leave the terminal application
 
-<img src="">
+Follow this link for a video walk-through of the application: https://youtu.be/i1qySDWJAME
 
 ## Credits
 
